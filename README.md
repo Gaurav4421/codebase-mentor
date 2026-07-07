@@ -89,12 +89,12 @@ flowchart TD
 ## Quickstart
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/codebase-mentor.git
+git clone https://github.com/Gaurav4421/codebase-mentor.git
 cd codebase-mentor
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 
-cp .env.example .env   # then add your GEMINI_API_KEY
+cp .env.example .env  
 ```
 
 **Chat UI:**
@@ -110,7 +110,7 @@ python cli.py index /path/to/some/repo --ask "What does the parser module do?"
 
 **Docker:**
 ```bash
-export GEMINI_API_KEY=your_key
+export GEMINI_API_KEY=gemini key
 export REPO_TO_INDEX=/path/to/repo/to/index
 docker compose up --build
 # open http://localhost:8501
@@ -131,8 +131,8 @@ it deliberately avoids LLM-graded scoring.
 ```bash
 pip install -r requirements-dev.txt
 
-pytest              # fast unit tests (no model downloads, no API key) — runs in CI
-pytest -m integration   # + a full end-to-end pipeline test (downloads embedding/reranker models)
+pytest            
+pytest -m integration  
 ```
 
 Unit tests cover language detection, file loading, symbol extraction, and conversation memory
