@@ -1,0 +1,10 @@
+services:
+  codebase-mentor:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - GEMINI_MODEL=${GEMINI_MODEL:-gemini-2.5-flash}
+    volumes:
+      - ${REPO_TO_INDEX:-./}:/repo:ro
