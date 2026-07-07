@@ -7,7 +7,7 @@ symbol extraction, a call/inheritance graph, a file/class/function hierarchy —
 **hybrid retrieval pipeline** (BM25 + dense vectors + cross-encoder reranking), then answers
 questions through an LLM with conversation memory and follow-up-question resolution.
 
-[![CI](https://github.com/YOUR_USERNAME/Gaurav4421/actions/workflows/ci.yml/badge.svg)](https://github.com/Gaurav4421/codebase-mentor/actions/workflows/ci.yml)
+[![CI](https://github.com/Gaurav4421/codebase-mentor/actions/workflows/ci.yml/badge.svg)](https://github.com/Gaurav4421/codebase-mentor/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
